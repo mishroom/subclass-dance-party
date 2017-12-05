@@ -20,7 +20,6 @@ Yoda.prototype.setPosition = function(top, left) {
 };
 Yoda.prototype.step = function() {
   Dancer.prototype.step.call(this);
-  console.log("Yoda",this.$node);
   this.$node.animate({
    //top: top
     //left: [ 'toggle']
