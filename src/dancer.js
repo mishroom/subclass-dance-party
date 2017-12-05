@@ -11,7 +11,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   //method, needs to be defiend outside of makeDancer, as prototypechain
   //dancer.step = 
-
+  
   //unsure, but gonna call using this
   this.step();
 
@@ -27,11 +27,15 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   //return dancer;
 };
 
-makeDancer.prototype.step = function() {
+makeDancer.prototype.step = function(timeBetweenSteps) {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  console.log('inside step');
-  setTimeout(this.step, this.timeBetweenSteps);
+  // console.log("inside step",this);
+  // var time = this.timeBetweenSteps;
+  // var context = this;
+  // this.step();
+  
+  setTimeout(this.step.bind(this), timeBetweenSteps);
   
 };
 
