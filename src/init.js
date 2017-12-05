@@ -28,8 +28,9 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    window.dancers.push(dancer);
-    console.log(window.dancers);
+   // window.dancers.push(dancer);
+   // console.log(window.dancers);
+    // $(dancer.$node).html('<img src = "stormtrooper_head.png" height="50px" width="50px">');
     $('body').append(dancer.$node);
   });
 });

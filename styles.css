@@ -21,7 +21,15 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid blue;
+  /*border:10px solid blue;*/
   border-radius:10px;
   position:absolute;
+  height: 2px
+}
+.blinky{
+  border:10px solid red;
+}
+
+.line {
+  /*style-image: url('stormtrooper_head.png');*/
 }
