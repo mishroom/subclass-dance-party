@@ -35,7 +35,7 @@ makeDancer.prototype.step = function(timeBetweenSteps) {
   // var context = this;
   // this.step();
   
-  setTimeout(this.step.bind(this), timeBetweenSteps);
+  setTimeout(this.step, timeBetweenSteps);
   
 };
 
