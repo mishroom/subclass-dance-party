@@ -13,7 +13,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   //dancer.step = 
   
   //unsure, but gonna call using this
-  this.step();
+  this.step(timeBetweenSteps);
 
   //a method, goes on prototype chain
   //dancer.
@@ -31,7 +31,7 @@ makeDancer.prototype.step = function(timeBetweenSteps) {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
   // console.log("inside step",this);
-  // var time = this.timeBetweenSteps;
+  // var time = this.stimeBetweenSteps;
   // var context = this;
   // this.step();
   
