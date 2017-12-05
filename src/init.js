@@ -17,7 +17,7 @@ $(document).ready(function() {
      */
 
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    alert(dancerMakerFunctionName);
+    // alert(dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
@@ -28,6 +28,8 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
+    console.log(window.dancers);
     $('body').append(dancer.$node);
   });
 });
