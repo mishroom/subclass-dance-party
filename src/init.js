@@ -1,5 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
+  window.darkSide = [];
+  window.lightSide = [];
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -15,7 +17,8 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-
+    
+    
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     // alert(dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
