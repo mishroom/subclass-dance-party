@@ -42,5 +42,12 @@ $(document).ready(function() {
       // element.isClicked = true;
     });
   });
+  $('body').on('click', function(event) {
+    var vader = $('<span class="vader"><img src = "Darth_Vader.png" class="vaderImg" height="200px"></span>');
+    $('body').append(vader);
+    setTimeout(function () {
+      $('.vader').remove();
+    }, 500);
+  });
 
 });
