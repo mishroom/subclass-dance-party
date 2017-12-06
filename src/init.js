@@ -24,16 +24,23 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * 3 / 4 * Math.random(),
-      $("body").width() * Math.random(),
+      $('body').height() * 3 / 4 * Math.random(),
+      $('body').width() * Math.random(),
       Math.random() * 1000
     );
-   // window.dancers.push(dancer);
-   // console.log(window.dancers);
+    // window.dancers.push(dancer);
+    // console.log(window.dancers);
     // $(dancer.$node).html('<img src = "stormtrooper_head.png" height="50px" width="50px">');
-    $('body').append(dancer.$node);
     window.dancers.push(dancer);
-    
+    $('body').append(dancer.$node);
   });
-  console.log(window.dancers);
+
+  $('.lineupButton').on('click', function(event) {
+    
+    window.dancers.forEach(function (element) {
+      element.lineUp();
+      // element.isClicked = true;
+    });
+  });
+
 });

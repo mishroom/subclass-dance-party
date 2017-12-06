@@ -37,3 +37,6 @@ Pew.prototype.step = function() {
     
 };
 
+Pew.prototype.lineUp = function() {
+  
+};
